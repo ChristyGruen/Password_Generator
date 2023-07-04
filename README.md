@@ -49,8 +49,9 @@ THEN the password is either displayed in an alert or written to the page
   #### Chris Gruenhagen 3July2023
 😸😸😸😸😸😸😸😸😸😸
 
-
-
+<!-- 
+------------------
+Homework
 # 03 JavaScript: Password Generator
 
 ## Your Task
@@ -151,4 +152,4 @@ You are required to submit the following for review:
 
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-
+ -->
