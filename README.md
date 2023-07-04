@@ -37,12 +37,12 @@ THEN the password is either displayed in an alert or written to the page
 <!-- The professional portfolio provides the requested information and meets the specified acceptance criteria. -->
 
 <!-- markdown embed image -->
-![desc](./assets/images/imagenane)
+![desc](./assets/images/PW_Generator.png)
 
 ## Website Link
 
 <!-- HTML embed link -->
-<a href="link" target="_blank">desc</a>
+<a href="https://christygruen.github.io/password_generator/" target="_blank">Password Generator </a>
 
 
 ## Completed by:
