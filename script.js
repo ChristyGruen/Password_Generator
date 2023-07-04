@@ -150,7 +150,6 @@ function generatePassword(){
     buildPW();
     console.log(passwordBuild.join(''));
     return passwordBuild.join('');
-
   }
   else {
     return
@@ -162,7 +161,6 @@ function generatePassword(){
 // Write password to the #password input
 function writePW() {
   var password = generatePassword();
-
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
