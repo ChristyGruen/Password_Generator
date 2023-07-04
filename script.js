@@ -4,9 +4,9 @@ var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 console.log(lowercase);
 var uppercase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 console.log(uppercase);
-var numeric = [0,1,2,3,4,5,6,7,8,9];
+var numeric = ['0','1','2','3','4','5','6','7','8','9'];
 console.log(numeric);
-var specialChar = ["`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_","+", "-","=","[","]", "{", "}", ";","'",":",'"', "\\", "|", ".", "<", ">", "/", "?", "~"];
+var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_","+", "-","=","[","]", "{", "}",  ".", "<", ">", "/", "?", "~"];
 console.log(specialChar)
 
 //set global variables
@@ -123,7 +123,8 @@ function buildPW(){
     // console.log(i);
    
     var randChar = Math.floor(Math.random()*passwordCharacters.length);
-    passwordBuild.push(randChar);
+
+    passwordBuild.push(passwordCharacters[randChar]);
     // console.log(passwordCharacters.length)
     // console.log(randChar)
     // passwordBuild.push(passwordCharacters[Math.random(passwordCharacters.length)]);
@@ -145,8 +146,11 @@ function generatePassword(){
     uppercasePW();
     numericPW();
     specialCharPW();
-    // checkArray();
+    checkArray();
     buildPW();
+    console.log(passwordBuild.join(''));
+    return passwordBuild.join('');
+
   }
   else {
     return
@@ -158,6 +162,7 @@ function generatePassword(){
 // Write password to the #password input
 function writePW() {
   var password = generatePassword();
+
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
@@ -182,7 +187,7 @@ function incompletePW(){
   
 }
 
-generatePassword();
+// generatePassword();
 
 // GIVEN I need a new, secure password
 // WHEN I click the button to generate a password
